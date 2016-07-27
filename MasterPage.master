@@ -1,0 +1,62 @@
+﻿ <%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!doctype html>
+<html lang=''>
+    
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title><asp:ContentPlaceHolder ID="title" runat="server">
+
+    </asp:ContentPlaceHolder>
+   </title>
+
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="https://s3.amazonaws.com/menumaker/menumaker.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="styles.css">
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+  <asp:Panel ID="banner" runat="server" HorizontalAlign="Center">
+      <div style="padding:0px; margin:-5px;">
+        <asp:Image ID="img" runat="server" ImageUrl="~/images/ntsBanner1.png"  />
+   </div>
+           </asp:Panel>
+        
+        <div id="cssmenu" style="padding:0px;">
+        <ul>
+            <li><a href="Default.aspx"><i class="fa fa-fw fa-home"></i>Home</a></li>
+            <li><a href="Portfolio.aspx"><i class="fa fa-fw fa-folder"></i>Portfolio</a></li>
+            <li><a href="Resume.aspx"><i class="fa fa-fw fa-file-pdf-o"></i>Resume</a></li>
+            <li><a href="AboutMe.aspx"><i class="fa fa-fw fa-child"></i>About Me</a></li>
+            <li><a href="Contact.aspx"><i class="fa fa-fw fa-phone"></i>Contact</a></li>
+        </ul>
+    </div>
+
+    <asp:Panel runat="server" id="innderbodypanel">
+       <asp:table runat="server" HorizontalAlign="Center" Height="1000px" 
+           BackColor="White" width="1200px" ID="table" BorderColor="black">
+           <asp:TableRow>
+               <asp:TableCell>
+                   <asp:ContentPlaceHolder runat="server" ID="bod">
+
+                   </asp:ContentPlaceHolder>
+               </asp:TableCell>
+           </asp:TableRow>
+       </asp:table>
+    </asp:Panel>
+
+<asp:ContentPlaceHolder ID="footer" runat="server">
+    <div>
+    </div>
+</asp:ContentPlaceHolder>
+
+</body>
+</html>
