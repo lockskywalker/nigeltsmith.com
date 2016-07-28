@@ -1,4 +1,6 @@
 # nigeltsmith.com
 ASP.NET/C# portfolio website created for employers.  
   
-To Do: Fix margin issue on IE /Portfolio.aspx
+To Do:  
+1. Fix margin issue on IE and Firefox /Portfolio.aspx  
+2. Linked-in link broken
