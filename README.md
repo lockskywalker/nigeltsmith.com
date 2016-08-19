@@ -2,7 +2,7 @@
 ASP.NET/C# portfolio website created for employers.  
 
 Testing:  
-1. Mobile browser support by creating a mobile.master redirects to mobile versions of every page  
+1. Deployed mobile browser support. Margins to be fixed for different screen sizes.  
   
 In Production:  
 1. Linked-in link broken(on mobile)  
